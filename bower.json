@@ -1,0 +1,24 @@
+{
+  "name": "angular_toaster",
+  "description": "Angular custom toaster factory.",
+  "main": "app.js",
+  "authors": [
+    "Ales"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Toaster"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}

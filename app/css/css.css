@@ -1,0 +1,54 @@
+@import "https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css";
+button {
+  margin: 10px;
+  width: 100px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 5px; }
+
+body {
+  background-color: #eee;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+ab-toaster {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; }
+
+.bubble-message {
+  max-width: 300px;
+  background-color: #e8f4f8;
+  border-radius: 10px;
+  border: 2px solid #d4ebf2;
+  display: flex;
+  align-items: center;
+  color: #3a9fc0;
+  text-align: center;
+  margin: 10px; }
+  .bubble-message:hover {
+    cursor: pointer; }
+  .bubble-message i {
+    padding: 20px;
+    font-size: 2.5em !important;
+    width: 70px; }
+  .bubble-message .alert-text {
+    flex-grow: 1;
+    font-size: 1.4em;
+    font-family: 'Asap', cursive;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .bubble-message.warning {
+    background-color: #ffe6e6;
+    border-color: #ffcccc;
+    color: #ff3333; }
+  .bubble-message.success {
+    background-color: #d2ffd2;
+    border-color: #b3ffb3;
+    color: #00b300; }

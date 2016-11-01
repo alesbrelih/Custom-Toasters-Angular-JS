@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="toasterTestApp">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/css.css" rel="stylesheet">
+    </head>
+    <body>
+    <div class="main-ctrl" ng-controller="MainCtrl as ctrl">
+        <button type="button" ng-click="ctrl.successToaster()">Success</button> <br>
+        <button type="button" ng-click="ctrl.alertToaster()">Alert</button> <br>
+        <button type="button" ng-click="ctrl.warningToaster()">Warning</button> <br>
+    
+
+    <ab-toaster>
+        <ab-toaster-msg ng-repeat="toaster in ctrl.Toasters" msg-config="toaster"></ab-toaster-msg>
+    </ab-toaster>
+    </div>
+    <script src="src/scripts/angular.js"></script>
+    <script src="component/toaster-message/ab-toaster-message.js"></script>
+    <script src="component/toaster-message/service/ab-toaster-service.js"></script>
+    <script src="app.js"></script>
+    </body>
+</html>

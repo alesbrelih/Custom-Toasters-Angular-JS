@@ -1,0 +1,74 @@
+@import "https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css";
+
+//random styles
+button{
+  margin:10px;
+  width:100px;
+  padding:5px;
+  background-color:black;
+  color:white;
+  border-radius:5px;
+}
+
+body{
+  background-color: #eee;
+  width:100vw;
+  height: 100vh;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ab-toaster{
+  position: fixed;
+  bottom:20px;
+  right:20px;
+}
+
+.bubble-message{
+  
+  max-width:300px;
+  
+  background-color:lighten(lightblue,15%);
+  border-radius:10px;
+  border: 2px solid lighten(lightblue,10%);
+
+  
+  display:flex;
+  align-items:center;
+  color:darken(lightblue,30%);
+  
+  text-align:center;
+  
+  margin:10px;
+  
+  &:hover{
+    cursor:pointer;
+  }
+  i{
+    padding:20px;
+    font-size:2.5em !important;
+    width:70px;
+  }
+  .alert-text{
+    flex-grow:1;
+    font-size:1.4em;
+    font-family: 'Asap', cursive;
+    
+    padding-right:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+  &.warning{
+    background-color:lighten(red,45%);
+    border-color:lighten(red,40%);
+    color:lighten(red,10%);
+  }
+  &.success{
+    background-color:lighten(green,66%);
+    border-color:lighten(green,60%);
+    color:lighten(green,10%);
+  }
+}
