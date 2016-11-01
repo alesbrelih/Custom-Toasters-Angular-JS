@@ -53,6 +53,7 @@
         };
     }
 
+    //create new module for factory
 
     const toasterServiceModule = angular.module("toasterServiceModule",[]);
     toasterServiceModule.factory("ToasterService",ToasterServiceFunction);
