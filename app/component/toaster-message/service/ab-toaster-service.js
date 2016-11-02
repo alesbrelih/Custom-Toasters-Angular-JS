@@ -48,7 +48,7 @@
         //public functions from singleton
         return{
             Toasters: _toasters,
-            AddNew:_createNewToaster,
+            Add:_createNewToaster,
             Remove: _removeToaster
         };
     }

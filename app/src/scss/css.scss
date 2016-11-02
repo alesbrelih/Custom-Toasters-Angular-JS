@@ -1,5 +1,25 @@
 @import "https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css";
 
+
+//color variables to test
+$light-gray:#eee;
+$dark-gray:#333;
+
+$white:#fff;
+
+$dark-red:#660000;
+$red:#990000;
+$light-red:#ff0000;
+
+$dark-blue:#003366;
+$blue:#3333ff;
+$light-blue:#3399cc;
+
+$dark-green:#006600;
+$green:#009900;
+$light-green:#66ff66;
+
+
 //random styles
 button{
   margin:10px;
@@ -25,6 +45,11 @@ ab-toaster{
   position: fixed;
   bottom:20px;
   right:20px;
+}
+ab-toasters{
+  position: fixed;
+  bottom:20px;
+  left:20px;
 }
 
 .bubble-message{
@@ -71,4 +96,78 @@ ab-toaster{
     border-color:lighten(green,60%);
     color:lighten(green,10%);
   }
+}
+
+.toaster-message{
+    
+    //center content
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+    //margin between toasters
+    margin:20px;
+    
+    //border radius
+    border-radius:3px;
+    
+    //colors - fonts
+    background-color:$dark-gray;
+    color:$white;
+    font-size:1.2em;
+    
+    //max width
+    max-width:300px;
+    
+    //nicer border using box shadow
+    box-shadow:0px 0px 0px 2px $white,0px 0px 0px 4px $dark-gray;
+    
+    transition:all 150ms ease;
+    
+    //changes on hover
+    &:hover{
+      cursor:pointer;
+      transform:translateY(-10px);
+    }
+    
+    //toaster type icon sizing
+    i.fa-exclamation,i.fa-bell,
+    i.fa-check,i.fa-pencil{
+      padding-top:30px;
+      padding-bottom:30px;
+      width:100px;
+      font-size:1.8em;
+      text-align:center;
+    }
+    i.fa-exclamation{
+      font-size:2.5em;
+    }
+    
+    //text padding
+    .toaster-text{
+      padding:20px 20px 20px 0px;
+      font-size:1.1em;
+    }
+    
+    //x placement
+    i.fa-times{
+      align-self:flex-start;
+      padding-top:10px;
+      padding-right:10px;
+    }
+    
+    //different types of toasters
+    &.warning{
+      background-color:$red;
+      box-shadow:0px 0px 0px 2px $white,0px 0px 0px 4px $red;
+    }
+    &.success{
+      background-color:$dark-green;
+      box-shadow:0px 0px 0px 2px $white,0px 0px 0px 4px $dark-green;
+    }
+    &.alert{
+      background-color:$dark-blue;
+      box-shadow:0px 0px 0px 2px $white,0px 0px 0px 4px $dark-blue;
+      
+    }
 }

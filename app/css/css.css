@@ -21,6 +21,11 @@ ab-toaster {
   bottom: 20px;
   right: 20px; }
 
+ab-toasters {
+  position: fixed;
+  bottom: 20px;
+  left: 20px; }
+
 .bubble-message {
   max-width: 300px;
   background-color: #e8f4f8;
@@ -52,3 +57,44 @@ ab-toaster {
     background-color: #d2ffd2;
     border-color: #b3ffb3;
     color: #00b300; }
+
+.toaster-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border-radius: 3px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.2em;
+  max-width: 300px;
+  box-shadow: 0px 0px 0px 2px #fff, 0px 0px 0px 4px #333;
+  transition: all 150ms ease; }
+  .toaster-message:hover {
+    cursor: pointer;
+    transform: translateY(-10px); }
+  .toaster-message i.fa-exclamation, .toaster-message i.fa-bell,
+  .toaster-message i.fa-check, .toaster-message i.fa-pencil {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100px;
+    font-size: 1.8em;
+    text-align: center; }
+  .toaster-message i.fa-exclamation {
+    font-size: 2.5em; }
+  .toaster-message .toaster-text {
+    padding: 20px 20px 20px 0px;
+    font-size: 1.1em; }
+  .toaster-message i.fa-times {
+    align-self: flex-start;
+    padding-top: 10px;
+    padding-right: 10px; }
+  .toaster-message.warning {
+    background-color: #990000;
+    box-shadow: 0px 0px 0px 2px #fff, 0px 0px 0px 4px #990000; }
+  .toaster-message.success {
+    background-color: #006600;
+    box-shadow: 0px 0px 0px 2px #fff, 0px 0px 0px 4px #006600; }
+  .toaster-message.alert {
+    background-color: #003366;
+    box-shadow: 0px 0px 0px 2px #fff, 0px 0px 0px 4px #003366; }

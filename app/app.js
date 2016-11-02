@@ -1,7 +1,7 @@
 (function(angular){
     
     //initialize app
-	let app = angular.module("toasterTestApp",["toasterMsgComponent","toasterServiceModule"]);
+	let app = angular.module("toasterTestApp",["toasterMsgComponent","toasterServiceModule","abToaster.component","abToaster.msg"]);
 
     //main controller
 	app.controller("MainCtrl",MainControllerFunction);
@@ -13,15 +13,15 @@
         //testing toasters - adding them when clicking buttons
         ctrl.successToaster = function(){
 
-            ToasterService.AddNew("success","Success message here!");
+            ToasterService.Add("success","Success message here!");
         };
 
         ctrl.alertToaster = ()=>{
-            ToasterService.AddNew("alert","Alert message here!");
+            ToasterService.Add("alert","Alert message here!");
         };
 
         ctrl.warningToaster = ()=>{
-            ToasterService.AddNew("warning","Warning message here!");
+            ToasterService.Add("warning","Warning message here!");
         };
         
         
