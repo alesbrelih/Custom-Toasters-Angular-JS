@@ -1,7 +1,7 @@
 (function(angular){
     
     //initialize app
-	let app = angular.module("toasterTestApp",["toasterMsgComponent","toasterServiceModule","abToaster.component","abToaster.msg"]);
+	let app = angular.module("toasterTestApp",["toasterMsgComponent","toasterServiceModule","abToaster.component","abToaster.msg","ngAnimate"]);
 
     //main controller
 	app.controller("MainCtrl",MainControllerFunction);

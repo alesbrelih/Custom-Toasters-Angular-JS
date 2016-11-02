@@ -55,6 +55,7 @@ ab-toasters{
   flex-direction: column;
   align-items:center;
 
+
 }
 
 .bubble-message{
@@ -103,6 +104,26 @@ ab-toasters{
   }
 }
 
+
+ab-toast-msg{
+  &.ng-animate{
+    &.ng-enter{
+      animation: 1.5s fadeInToast;
+      // &.ng-enter-active{
+      //   opacity:1;
+      // }
+    
+    }
+    &.ng-leave{
+      animation: 1.5s fadeOutToast;
+      // &.ng-leave-active{
+      // opacity:0;
+      // }
+    }
+  }
+  
+}
+
 .toaster-message{
     
     //center content
@@ -128,6 +149,10 @@ ab-toasters{
     box-shadow:0px 0px 0px 2px $white,0px 0px 0px 4px $dark-gray;
     
     transition:all 150ms ease;
+
+
+    
+
     
     //changes on hover
     &:hover{
@@ -189,4 +214,21 @@ ab-toasters{
     }
   }
   
+}
+
+@keyframes fadeInToast{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes fadeOutToast{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
 }
